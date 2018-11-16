@@ -1,6 +1,7 @@
 package launch;
 
 import javafx.application.Application;
+import javafx.application.Platform;
 import javafx.scene.Scene;
 import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
@@ -24,4 +25,9 @@ public class LaunchMyTomato extends Application {
     primaryStage.show();
   }
 
+  public static void main(String[] args) {
+	  LaunchMyTomato swethaTomato = new LaunchMyTomato();
+	  Platform.runLater(()-> swethaTomato.start(new Stage()));
+	  
+  }
 }
