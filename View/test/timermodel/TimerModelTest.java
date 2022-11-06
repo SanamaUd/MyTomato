@@ -15,6 +15,8 @@ import utilities.TomatoActionListener;
 
 public class TimerModelTest {
 
+
+	
 	private static final int EXPECTED_INITIAL_VALUE_IN_SECONDS = 25*60;
 	private TimerModel systemUnderTest;
 	@Mock private TomatoActionListener<Duration> durationListenerMock;
